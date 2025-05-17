@@ -1,21 +1,36 @@
 /* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+body { /* Base styling for the entire page */
+    font-family: Arial, sans-serif; /* Sets a clean and readable font */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    background-color: #f4f4f4; /* Light grey background color */
+    color: #333; /* Dark text color for readability */
+}
+
+/* Main Content */
+main { /* Main content area styling */
+    padding: 2rem; /* Space around content */
+    text-align: center; /* Centers text horizontally */
+}
+
+.welcome, .video, .links { /* Styling for content sections */
+    margin: 1.5rem 0; /* Space between sections */
+}
+
+iframe { /* Video frame styling */
+    max-width: 100%; /* Responsive width */
+    height: auto; /* Maintain aspect ratio */
 }
 
 /* Footer */
-footer {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
+footer { /* Footer area styling */
+    background-color: #222; /* Dark background for contrast */
+    color: white; /* White text color */
+    text-align: center; /* Centers text horizontally */
+    padding: 1rem; /* Space around content */
+    margin-top: 2rem; /* Space above the footer */
 }
 
-footer p {
-    margin: 0;
+footer p { /* Styling for footer text */
+    margin: 0; /* Removes default margin */
 }

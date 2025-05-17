@@ -7,6 +7,41 @@ body { /* Base styling for the entire page */
     color: #333; /* Dark text color for readability */
 }
 
+/* Header and Banner */
+header { /* Styling for the header section */
+    background-color: #a6192e; /* Arsenal's signature red color */
+    color: white; /* Text color in the header */
+    padding: 1rem; /* Space around the content */
+}
+
+.banner { /* Styling for the banner area containing logo and title */
+    display: flex; /* Flex layout for alignment */
+    align-items: center; /* Vertically centers items */
+    gap: 1rem; /* Space between logo and title */
+}
+
+.Badge { /* Logo styling */
+    height: 60px; /* Fixed height for the logo */
+    width: auto; /* Auto width to maintain aspect ratio */
+}
+
+nav ul { /* Navigation list styling */
+    list-style-type: none; /* Removes default bullet points */
+    padding: 0; /* No padding on the list */
+    display: flex; /* Horizontal layout */
+    gap: 1rem; /* Space between navigation items */
+}
+
+nav a { /* Styling for navigation links */
+    color: white; /* White text color for contrast */
+    text-decoration: none; /* Removes underline */
+    font-weight: bold; /* Bold text for visibility */
+}
+
+nav a:hover { /* Hover effect for navigation links */
+    text-decoration: underline; /* Adds underline on hover */
+}
+
 /* Main Content */
 main { /* Main content area styling */
     padding: 2rem; /* Space around content */

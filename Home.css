@@ -5,23 +5,35 @@ body { /* Base styling for the entire page */
     padding: 0; /* Removes default padding */
     background-color: #f4f4f4; /* Light grey background color */
     color: #333; /* Dark text color for readability */
+    background-image: linear-gradient(#ffffff, #e55f5f);
+}
+
+.history {
+    font-family: sans-serif; /* Monospace font for history section */
+    font-size: 3rem; /* Slightly larger font size */
 }
 
 /* Header and Banner */
 header { /* Styling for the header section */
-    background-color: #a6192e; /* Arsenal's signature red color */
+  /*  background-color: #080808; /* Arsenal's signature red color */
     color: white; /* Text color in the header */
     padding: 1rem; /* Space around the content */
 }
 
 .banner { /* Styling for the banner area containing logo and title */
-    display: flex; /* Flex layout for alignment */
-    align-items: center; /* Vertically centers items */
-    gap: 1rem; /* Space between logo and title */
+        background-image: url('Images/stadium.png'); /* Replace with your actual image path */
+        background-size: cover;        /* Makes the image cover the entire div */
+        background-position: center;   /* Centers the background image */
+        background-repeat: no-repeat;  /* Prevents image from repeating */
+        padding: 2rem;                 /* Adds spacing inside the banner */
+        display: flex;                 /* Aligns logo and title side by side */
+        align-items: center;          /* Vertically centers content */
+        gap: 1rem;                     /* Space between logo and title */
+        color: white;                 /* Makes text readable over dark backgrounds */
 }
 
 .Crest { /* Logo styling */
-    height: 60px; /* Fixed height for the logo */
+    height: 90px; /* Fixed height for the logo */
     width: auto; /* Auto width to maintain aspect ratio */
 }
 
@@ -57,23 +69,6 @@ iframe { /* Video frame styling */
     height: auto; /* Maintain aspect ratio */
 }
 
-/* Side Image Styling */
-.side-image {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    margin-right: 1rem;
-    width: 300px;
-}
-
-.side-image img {
-    max-width: 100%;
-    height: 500px;
-    border-radius: 5px;
-}
-
-
 /* Footer */
 footer { /* Footer area styling */
     background-color: #222; /* Dark background for contrast */
@@ -86,3 +81,159 @@ footer { /* Footer area styling */
 footer p { /* Styling for footer text */
     margin: 0; /* Removes default margin */
 }
+
+/* ------------------------------ */
+/* Unified Trophy Table Styling  */
+/* ------------------------------ */
+.trophy-table {
+    width: 80%; /* Sets the table width to 80% of its container for good spacing */
+    margin: 2rem auto; /* Adds vertical margin (2rem top and bottom), centers the table horizontally */
+    border-collapse: collapse; /* Removes spacing between table borders for cleaner look */
+}
+
+.trophy-table th, .trophy-table td {
+    border: 1px solid #333; /* Adds a solid dark border around all table cells */
+    padding: 0.75rem; /* Adds padding inside table cells for better readability */
+    text-align: center; /* Centers the text inside cells horizontally */
+    background-color: #f4f4f4; /* Light grey background for table cells */
+}
+
+.trophy-table th {
+    background-color: #a6192e; /* Dark red background for table headers */
+    color: white; /* White text in table headers for contrast */
+    font-weight: bold; /* Makes header text bold */
+}
+
+.trophy-table tr:hover {
+    background-color: #ddd; /* Light grey background on row hover for interactivity */
+}
+
+/* ---------------------------- */
+/* Headings and Paragraphs     */
+/* ---------------------------- */
+h2 {
+    text-align: center; /* Centers level-2 headings */
+    color: #a6192e; /* Applies Arsenal red color to heading text */
+    margin-bottom: 1rem; /* Adds spacing below the heading */
+}
+
+p {
+    text-align: center; /* Centers paragraph text */
+    margin-bottom: 1.5rem; /* Adds spacing below paragraph */
+}
+
+/* ---------------------------- */
+/* Hero Section Backgrounds     */
+/* ---------------------------- */
+.tourshero {
+    background-image: url(Images/Arsenal06.png); /* Sets background image */
+    min-height: 100vh; /* Ensures the section takes full viewport height */
+    background-repeat: no-repeat; /* Prevents image from repeating */
+    background-size: cover; /* Scales image to cover the entire section */
+}
+
+.rentalshero {
+    background-image: url(Images/Arsenal86.png); /* Background image for rentals section */
+    min-height: 100vh; /* Full viewport height */
+    background-repeat: no-repeat; /* No repeating */
+    background-size: cover; /* Image covers the full background */
+}
+
+.contacthero {
+    background-image: url(Images/Arsenal86.png); /* Background for contact section */
+    min-height: 100vh; /* Full height of viewport */
+    background-repeat: no-repeat; /* No tiling */
+    background-size: cover; /* Fully covers the container */
+}
+
+/* ---------------------------- */
+/* Contact Section Styling      */
+/* ---------------------------- */
+#contact {
+    background-color: #FFF; /* White background for contrast */
+    width: 90%; /* Contact section spans 90% of the container width */
+    padding-left: 6rem; /* Large left padding */
+    padding-top: 70px; /* Padding at the top */
+    padding-bottom: 2rem; /* Space below the section */
+}
+
+/* ---------------------------- */
+/* History Summary Section      */
+/* ---------------------------- */
+.history-summary {
+    margin: 2rem auto; /* Adds vertical spacing and centers the section */
+    width: 80%; /* Restricts width to 80% of page for readability */
+    text-align: justify; /* Justifies text so both edges align */
+    background-color: #f4f4f4; /* Light grey background */
+    padding: 1.5rem; /* Adds internal spacing */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.history-summary h2 {
+    text-align: center; /* Centers heading */
+    color: #a6192e; /* Arsenal red */
+    margin-bottom: 1rem; /* Spacing below heading */
+}
+
+.history-summary p {
+    line-height: 1.6; /* Increases line spacing for better reading */
+    margin: 0.75rem 0; /* Top and bottom margin for each paragraph */
+}
+
+/* ---------------------------- */
+/* Fixture Section Styling      */
+/* ---------------------------- */
+body.fixture {
+    font-family: Arial, sans-serif; /* Clean, readable font */
+    background-color: #f4f4f4; /* Light grey fallback background */
+    background-image: url(Images/Squad.png); /* Main background image */
+    background-repeat: no-repeat; /* Prevent image tiling */
+    background-size: auto; /* Make image cover entire background */
+    background-attachment: fixed; /* Keeps background in place during scroll */
+    background-image: url(Images/Squad.png) no-repeat fixed; /* Duplicate declaration with shorthand (can be optimized) */
+    background-size: cover; /* Ensures background covers the whole area */
+    margin: 20px; /* Adds spacing around the page */
+    color: #333; /* Dark text for readability */
+}
+
+/* ---------------------------- */
+/* Heading Styling (h1)         */
+/* ---------------------------- */
+h1 {
+    text-align: center; /* Center heading text */
+    color: #cc0000; /* Deep red color */
+    border-radius: 15px; /* Rounded corners (if background is applied) */
+}
+
+/* ---------------------------- */
+/* Table Styling for Fixtures   */
+/* ---------------------------- */
+table {
+    width: 50%; /* Full width table */
+    border-collapse: collapse; /* Removes spacing between cells */
+    margin-top: 30px; /* Spacing above the table */
+}
+
+th, td {
+    padding: 12px; /* Padding inside each cell */
+    border-bottom: 1px solid #000000; /* Dark brown border under each row */
+    text-align: left; /* Aligns text to the left inside cells */
+}
+
+th {
+    background-color: #623737; /* Dark maroon header background */
+    color: white; /* White text for contrast */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Light grey background on row hover */
+}
+
+caption {
+    caption-side: top; /* Places caption above the table */
+    font-size: 1.2em; /* Slightly larger text for emphasis */
+    margin-bottom: 10px; /* Space between caption and table */
+}
+
+  

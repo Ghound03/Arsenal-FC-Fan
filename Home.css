@@ -48,8 +48,17 @@ nav a { /* Styling for navigation links */
     font-weight: bold; /* Bold text for visibility */
 }
 
+nav a:link {
+    color: #EAEAEA;
+  }
+  
+  nav a:visited {
+    color: #FFF;
+  }
+
 nav a:hover { /* Hover effect for navigation links */
     text-decoration: underline; /* Adds underline on hover */
+    color: #FDA27F;
 }
 
 /* Main Content */

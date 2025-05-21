@@ -8,11 +8,6 @@ body { /* Base styling for the entire page */
     background-image: linear-gradient(#ffffff, #e55f5f);
 }
 
-.history {
-    font-family: sans-serif; /* Monospace font for history section */
-    font-size: 3rem; /* Slightly larger font size */
-}
-
 /* Header and Banner */
 header { /* Styling for the header section */
   /*  background-color: #080808; /* Arsenal's signature red color */
@@ -81,40 +76,20 @@ footer { /* Footer area styling */
 footer p { /* Styling for footer text */
     margin: 0; /* Removes default margin */
 }
-
-/* ------------------------------ */
-/* Unified Trophy Table Styling  */
-/* ------------------------------ */
-.trophy-table {
-    width: 80%; /* Sets the table width to 80% of its container for good spacing */
-    margin: 2rem auto; /* Adds vertical margin (2rem top and bottom), centers the table horizontally */
-    border-collapse: collapse; /* Removes spacing between table borders for cleaner look */
-}
-
-.trophy-table th, .trophy-table td {
-    border: 1px solid #333; /* Adds a solid dark border around all table cells */
-    padding: 0.75rem; /* Adds padding inside table cells for better readability */
-    text-align: center; /* Centers the text inside cells horizontally */
-    background-color: #f4f4f4; /* Light grey background for table cells */
-}
-
-.trophy-table th {
-    background-color: #a6192e; /* Dark red background for table headers */
-    color: white; /* White text in table headers for contrast */
-    font-weight: bold; /* Makes header text bold */
-}
-
-.trophy-table tr:hover {
-    background-color: #ddd; /* Light grey background on row hover for interactivity */
-}
-
+  
+/*History
 /* ---------------------------- */
-/* Headings and Paragraphs     */
+/* Headings and Paragraphs For    */
 /* ---------------------------- */
 h2 {
     text-align: center; /* Centers level-2 headings */
     color: #a6192e; /* Applies Arsenal red color to heading text */
     margin-bottom: 1rem; /* Adds spacing below the heading */
+}
+
+.history {
+    font-family: sans-serif; /* Monospace font for history section */
+    font-size: 3rem; /* Slightly larger font size */
 }
 
 p {
@@ -125,26 +100,21 @@ p {
 /* ---------------------------- */
 /* Hero Section Backgrounds     */
 /* ---------------------------- */
-.tourshero {
-    background-image: url(Images/Arsenal06.png); /* Sets background image */
-    min-height: 100vh; /* Ensures the section takes full viewport height */
-    background-repeat: no-repeat; /* Prevents image from repeating */
-    background-size: cover; /* Scales image to cover the entire section */
-}
 
-.rentalshero {
+.Arsenal86hero {
     background-image: url(Images/Arsenal86.png); /* Background image for rentals section */
     min-height: 100vh; /* Full viewport height */
     background-repeat: no-repeat; /* No repeating */
     background-size: cover; /* Image covers the full background */
 }
 
-.contacthero {
-    background-image: url(Images/Arsenal86.png); /* Background for contact section */
-    min-height: 100vh; /* Full height of viewport */
-    background-repeat: no-repeat; /* No tiling */
-    background-size: cover; /* Fully covers the container */
+.Arsenal06hero {
+    background-image: url(Images/Arsenal06.png); /* Sets background image */
+    min-height: 100vh; /* Ensures the section takes full viewport height */
+    background-repeat: no-repeat; /* Prevents image from repeating */
+    background-size: cover; /* Scales image to cover the entire section */
 }
+
 
 /* ---------------------------- */
 /* Contact Section Styling      */
@@ -181,59 +151,5 @@ p {
     margin: 0.75rem 0; /* Top and bottom margin for each paragraph */
 }
 
-/* ---------------------------- */
-/* Fixture Section Styling      */
-/* ---------------------------- */
-body.fixture {
-    font-family: Arial, sans-serif; /* Clean, readable font */
-    background-color: #f4f4f4; /* Light grey fallback background */
-    background-image: url(Images/Squad.png); /* Main background image */
-    background-repeat: no-repeat; /* Prevent image tiling */
-    background-size: auto; /* Make image cover entire background */
-    background-attachment: fixed; /* Keeps background in place during scroll */
-    background-image: url(Images/Squad.png) no-repeat fixed; /* Duplicate declaration with shorthand (can be optimized) */
-    background-size: cover; /* Ensures background covers the whole area */
-    margin: 20px; /* Adds spacing around the page */
-    color: #333; /* Dark text for readability */
-}
-
-/* ---------------------------- */
-/* Heading Styling (h1)         */
-/* ---------------------------- */
-h1 {
-    text-align: center; /* Center heading text */
-    color: #cc0000; /* Deep red color */
-    border-radius: 15px; /* Rounded corners (if background is applied) */
-}
-
-/* ---------------------------- */
-/* Table Styling for Fixtures   */
-/* ---------------------------- */
-table {
-    width: 50%; /* Full width table */
-    border-collapse: collapse; /* Removes spacing between cells */
-    margin-top: 30px; /* Spacing above the table */
-}
-
-th, td {
-    padding: 12px; /* Padding inside each cell */
-    border-bottom: 1px solid #000000; /* Dark brown border under each row */
-    text-align: left; /* Aligns text to the left inside cells */
-}
-
-th {
-    background-color: #623737; /* Dark maroon header background */
-    color: white; /* White text for contrast */
-}
-
-tr:hover {
-    background-color: #f1f1f1; /* Light grey background on row hover */
-}
-
-caption {
-    caption-side: top; /* Places caption above the table */
-    font-size: 1.2em; /* Slightly larger text for emphasis */
-    margin-bottom: 10px; /* Space between caption and table */
-}
 
   

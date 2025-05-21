@@ -5,7 +5,7 @@ body { /* Base styling for the entire page */
     padding: 0; /* Removes default padding */
     background-color: #f4f4f4; /* Light grey background color */
     color: #333; /* Dark text color for readability */
-    background-image: linear-gradient(#ffffff, #e55f5f);
+    background-image: linear-gradient(#ff4040, #ffffff);
 }
 
 /* Header and Banner */
@@ -38,12 +38,22 @@ nav ul { /* Navigation list styling */
     display: flex; /* Horizontal layout */
     gap: 1rem; /* Space between navigation items */
     justify-content: center; /* Centers navigation items */
-    
-    height: 40px;
+    margin: 5px; /* Space around the list */
+    border-radius: 5px; /* Rounded corners for the navigation bar */
+    width: 100%;
+      font-size: 120%;
+      font-weight: bold;
+      min-width: 900px;
+}
+
+nav ul li {
+    display: inline;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 nav a { /* Styling for navigation links */
-    color: rgb(0, 0, 0); /* White text color for contrast */
+    color: rgb(249, 247, 247); /* White text color for contrast */
     text-decoration: none; /* Removes underline */
     font-weight: bold; /* Bold text for visibility */
 }
@@ -51,7 +61,7 @@ nav a { /* Styling for navigation links */
 nav a:link {
     color: #EAEAEA;
   }
-  
+
   nav a:visited {
     color: #FFF;
   }
@@ -74,6 +84,9 @@ main { /* Main content area styling */
 iframe { /* Video frame styling */
     max-width: 100%; /* Responsive width */
     height: auto; /* Maintain aspect ratio */
+    align-items: center; /* Centers video */
+    margin: 0 auto; /* Centers video horizontally */
+    border: 2px solid #000000;
 }
 
 /* Footer */
@@ -195,5 +208,26 @@ p {
     background-color: #ede6e6; /* Light grey background on row hover for interactivity */
 }
 
+.side-image {
+    float: right;
+    width: 150px;
+    margin-right: 15px;
+  }
 
+  .text-block {
+    overflow: hidden; /* Helps contain the floated image */
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Align to the left (optional) */
+  }
+
+  .container img {
+    width: 400px; /* Adjust as needed */
+    margin-top: 15px; /* Space between text and image */
+  }
+
+  
   

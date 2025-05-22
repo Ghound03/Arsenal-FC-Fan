@@ -46,11 +46,15 @@ nav ul { /* Navigation list styling */
       min-width: 900px;
 }
 
-nav ul li {
-    display: inline;
-    padding-left: 2em;
-    padding-right: 2em;
+nav ul li {/* Selects all <li> (list item) elements that are inside a <ul> (unordered list), 
+       which itself is inside a <nav> (navigation) element */
+     display: inline;/* Makes each list item display inline (horizontally in a line), 
+       rather than the default block style (stacked vertically) */
+     padding-left: 2em;/* Adds 2em (relative to the font size) of space to the left side of each list item,
+       creating spacing between the items when laid out in a row */
+    padding-right: 2em;/* Adds 2em of space to the right side of each list item for consistent spacing on both sides */
 }
+
 
 nav a { /* Styling for navigation links */
     color: rgb(249, 247, 247); /* White text color for contrast */
@@ -58,13 +62,15 @@ nav a { /* Styling for navigation links */
     font-weight: bold; /* Bold text for visibility */
 }
 
+/* Style for an unvisited link inside a <nav> element */
 nav a:link {
-    color: #EAEAEA;
-  }
+  color: #EAEAEA; /* Set the text color of unvisited links to a light gray */
+}
 
-  nav a:visited {
-    color: #FFF;
-  }
+/* Style for a visited link inside a <nav> element */
+nav a:visited {
+  color: #FFF; /* Set the text color of visited links to white */
+}
 
 nav a:hover { /* Hover effect for navigation links */
     text-decoration: underline; /* Adds underline on hover */
@@ -79,6 +85,7 @@ main { /* Main content area styling */
 
 .welcome, .video, .links { /* Styling for content sections */
     margin: 1.5rem 0; /* Space between sections */
+     align-items: center; /* Centers video */
 }
 
 iframe { /* Video frame styling */
@@ -92,7 +99,6 @@ iframe { /* Video frame styling */
 /* Footer */
 footer { /* Footer area styling */
     background-color: #222; /* Dark background for contrast */
-    color: rgb(255, 255, 255); /* White text color */
     text-align: center; /* Centers text horizontally */
     padding: 1rem; /* Space around content */
     margin-top: 2rem; /* Space above the footer */
@@ -100,6 +106,7 @@ footer { /* Footer area styling */
 
 footer p { /* Styling for footer text */
     margin: 0; /* Removes default margin */
+    color: rgb(255, 255, 255); /* White text color */
 }
   
 /*History
@@ -236,41 +243,69 @@ p {
     background-color: #ede6e6; /* Light grey background on row hover for interactivity */
 }
 
+/* Styles for an image aligned to the side */
 .side-image {
-    float: right;
-    width: 150px;
-    margin-right: 15px;
-  }
+    float: right;           /* Positions the image to the right of surrounding content */
+    width: 150px;           /* Sets a fixed width for the image */
+    margin-right: 15px;     /* Adds space between the image and content to its left */
+}
 
-  .container {
-    display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Align to the left (optional) */
-  }
+/* Styles for a general container element */
+.container {
+    display: flex;              /* Enables flexbox layout */
+    flex-direction: column;    /* Arranges child elements vertically (top to bottom) */
+    align-items: center;       /* Horizontally centers the children within the container */
+}
 
-  .container img {
-    width: 400px; /* Adjust as needed */
-    margin-top: 15px; /* Space between text and image */
-  }
-
+/* Styles applied to images inside the .container */
+.container img {
+    width: 400px;           /* Sets the width of the image to 400 pixels */
+    margin-top: 15px;       /* Adds space above the image (between text and image) */
+}
 
 /* ============================
    Players Grid Section
    ============================ */
 .players {
-    display: flex;
-    flex-wrap: wrap; /* Allows items to wrap to next row */
-    justify-content: space-evenly; /* Even spacing */
-    padding: 30px;
-    gap: 20px; /* Space between cards */
+    display: flex;               /* Enables flexbox layout for child items */
+    flex-wrap: wrap;            /* Allows child items to wrap to the next line if needed */
+    justify-content: space-evenly; /* Distributes space evenly between and around child items */
+    padding: 30px;              /* Adds padding inside the container */
+    gap: 20px;                  /* Adds uniform spacing between the child elements (cards) */
+}
+
+
+/* Individual player card container */
+.player-card {
+    background-color: white; /* Sets the background color of the card to white */
+    border: 1px solid #ddd; /* Adds a light gray border around the card */
+    border-radius: 8px; /* Rounds the corners of the card with an 8px radius */
+    width: 30%; /* Makes each card take up 30% of the container's width (3 cards per row on large screens) */
+    min-width: 250px; /* Prevents the card from becoming smaller than 250px wide */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow below the card for depth */
+    transition: transform 0.2s; /* Enables a smooth animation when the card is hovered over */
+    overflow: hidden; /* Ensures any overflowing content (e.g., images or text) is clipped */
+}
+
+/* Hover effect on the player card */
+.player-card:hover {
+    transform: scale(1.02); /* Slightly enlarges the card when hovered, for an interactive effect */
+}
+
+/* Player image inside card */
+.player-card img {
+    width: 100%; /* Makes the image span the full width of the card */
+    height: auto; /* Adjusts the image height proportionally to maintain aspect ratio */
+    display: block; /* Removes any bottom spacing (whitespace) caused by inline images */
 }
 
 /* Player details section */
 .player-info {
-    padding: 15px;
-    font-size: 14px;
-    line-height: 1.6; /* Improves readability */
+    padding: 15px; /* Adds spacing inside the player info section for readability */
+    font-size: 14px; /* Sets the font size to 14px for the text in the details section */
+    line-height: 1.6; /* Increases the space between lines of text to improve readability */
 }
+
 
 
 

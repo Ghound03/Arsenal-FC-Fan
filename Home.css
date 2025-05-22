@@ -253,5 +253,25 @@ p {
     margin-top: 15px; /* Space between text and image */
   }
 
-  
-  
+
+/* ============================
+   Players Grid Section
+   ============================ */
+.players {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to next row */
+    justify-content: space-evenly; /* Even spacing */
+    padding: 30px;
+    gap: 20px; /* Space between cards */
+}
+
+/* Player details section */
+.player-info {
+    padding: 15px;
+    font-size: 14px;
+    line-height: 1.6; /* Improves readability */
+}
+
+
+
+

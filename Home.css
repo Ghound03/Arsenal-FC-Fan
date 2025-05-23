@@ -8,11 +8,11 @@ body { /* Base styling for the entire page */
     background-image: linear-gradient(#ff4040, #ffffff);
 }
 
-/* Header and Banner */
-header { /* Styling for the header section */
-  /*  background-color: #080808; /* Arsenal's signature red color */
-    color: white; /* Text color in the header */
-    padding: 1rem; /* Space around the content */
+header {
+    background-color: #d32f2f; /* Arsenal red theme */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
 }
 
 .banner { /* Styling for the banner area containing logo and title */
@@ -23,7 +23,7 @@ header { /* Styling for the header section */
         padding: 3rem;                 /* Adds spacing inside the banner */
         display: flex;                 /* Aligns logo and title side by side */
         align-items: center;          /* Vertically centers content */
-        gap: 1rem;                     /* Space between logo and title */
+        gap: 10px;                     /* Space between logo and title */
         color: white;                 /* Makes text readable over dark backgrounds */
 }
 
@@ -60,6 +60,7 @@ nav a { /* Styling for navigation links */
     color: rgb(249, 247, 247); /* White text color for contrast */
     text-decoration: none; /* Removes underline */
     font-weight: bold; /* Bold text for visibility */
+    font-size: 18px; /* Font size for readability */
 }
 
 /* Style for an unvisited link inside a <nav> element */
@@ -69,7 +70,7 @@ nav a:link {
 
 /* Style for a visited link inside a <nav> element */
 nav a:visited {
-  color: #FFF; /* Set the text color of visited links to white */
+  color: #510b87; /* Set the text color of visited links to white */
 }
 
 nav a:hover { /* Hover effect for navigation links */
@@ -83,7 +84,62 @@ main { /* Main content area styling */
     text-align: center; /* Centers text horizontally */
 }
 
-.welcome, .video, .links { /* Styling for content sections */
+/* Container for the hero section using a grid layout */
+.hero {
+  display: grid; /* Establishes a grid layout */
+  grid-template-columns: repeat(2, 1fr); /* Creates 2 columns of equal width (1 fraction unit each) */
+  grid-template-rows: repeat(2, 50vh); /* Creates 2 rows, each 50% of the viewport height */
+  width: 100%; /* Sets the width of the container to 100% of its parent */
+  height: 100vh; /* Sets the height to 100% of the viewport height */
+}
+
+/* Individual item within the hero grid */
+.hero-item {
+  position: relative; /* Sets the item as a reference point for absolutely positioned children */
+  overflow: hidden; /* Hides any content that overflows the boundaries */
+}
+
+/* Styling for images inside each hero item */
+.hero-item img {
+  width: 100%; /* Makes the image span the full width of the container */
+  height: 100%; /* Makes the image span the full height of the container */
+  object-fit: cover; /* Scales the image to cover the container without stretching */
+  transition: transform 0.5s ease; /* Smooth transition effect for transformations */
+  display: block; /* Removes any bottom spacing caused by inline-block images */
+}
+
+/* Hover effect on hero item images */
+.hero-item:hover img {
+  transform: scale(1.05); /* Scales the image up slightly on hover */
+  filter: brightness(70%); /* Darkens the image to highlight overlaid text */
+}
+
+/* Styling for headings inside hero items */
+.hero-item h2 {
+  position: absolute; /* Allows placement over the image */
+  top: 50%; /* Positions the top edge at 50% of the container height */
+  left: 50%; /* Positions the left edge at 50% of the container width */
+  transform: translate(-50%, -50%); /* Centers the heading exactly in the middle */
+  font-size: 2rem; /* Sets the font size to 2 rem units */
+  color: white; /* Sets the text color to white */
+  font-weight: bold; /* Makes the font weight bold */
+  text-transform: uppercase; /* Transforms text to uppercase */
+  z-index: 1; /* Ensures the heading is above the image */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds a shadow for better readability over the image */
+  pointer-events: none; /* Prevents the heading from interfering with mouse events */
+}
+
+/* Anchor tag that wraps the entire hero item */
+.hero-item a {
+  display: block; /* Makes the link a block element, so it fills the container */
+  width: 100%; /* Sets the link width to 100% of its parent */
+  height: 100%; /* Sets the link height to 100% of its parent */
+  text-decoration: none; /* Removes the default underline on links */
+  position: relative; /* Allows for absolute positioning of children inside */
+}
+
+
+ .video, .links { /* Styling for content sections */
     margin: 1.5rem 0; /* Space between sections */
      align-items: center; /* Centers video */
 }
@@ -186,7 +242,7 @@ p {
     background-size: cover; /* Image covers the full background */
     margin: 2rem auto; /* Adds vertical spacing and centers the section */
     width: 80%; /* Restricts width to 80% of page for readability */
-    text-align: justify; /* Justifies text so both edges align */
+    text-align: center; /* Justifies text so both edges align */
     background-color: #f4f4f4; /* Light grey background */
     padding: 1.5rem; /* Adds internal spacing */
     border-radius: 5px; /* Rounded corners */
@@ -267,7 +323,7 @@ p {
    Team Grid Section
    ============================ */
 
-   .team h2 {
+   .team h1 {
     text-align: center; /* Centers heading */
     color: #ffffff; /* Arsenal red */
     margin-bottom: 1rem; /* Spacing below heading */

@@ -267,7 +267,7 @@ p {
    Team Grid Section
    ============================ */
 
-   .team-grid {
+   .team h2 {
     text-align: center; /* Centers heading */
     color: #ffffff; /* Arsenal red */
     margin-bottom: 1rem; /* Spacing below heading */

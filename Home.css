@@ -313,6 +313,18 @@ p {
     line-height: 1.6; /* Increases the space between lines of text to improve readability */
 }
 
+/* ============================
+   Substitutes Section
+   ============================ */
+#subs {
+    background-color: #fff;
+    padding: 30px 20px;
+    margin: 0 auto;
+    max-width: 800px; /* Centered content area */
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
 
 
 

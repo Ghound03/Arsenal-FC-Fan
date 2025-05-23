@@ -264,8 +264,15 @@ p {
 }
 
 /* ============================
-   Players Grid Section
+   Team Grid Section
    ============================ */
+
+   .team-grid {
+    text-align: center; /* Centers heading */
+    color: #ffffff; /* Arsenal red */
+    margin-bottom: 1rem; /* Spacing below heading */
+}
+
 .players {
     display: flex;               /* Enables flexbox layout for child items */
     flex-wrap: wrap;            /* Allows child items to wrap to the next line if needed */

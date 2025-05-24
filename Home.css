@@ -209,6 +209,12 @@ p {
     background-size: cover; /* Image covers the full background */
 }
 
+.Arsenalgunnerhero {
+    background-image: url(Images/gunner.png); /* Background image for rentals section */
+    min-height: 100vh; /* Full viewport height */
+    background-repeat: no-repeat; /* No repeating */
+    background-size: cover; /* Image covers the full background */
+}
 .Arsenal06hero {
     background-image: url(Images/Arsenal06.png); /* Sets background image */
     min-height: 100vh; /* Ensures the section takes full viewport height */

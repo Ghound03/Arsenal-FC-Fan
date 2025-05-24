@@ -183,10 +183,16 @@ h2 {
 .history1 {
     font-family: sans-serif; /* Monospace font for history section */
     font-size: 3rem; /* Slightly larger font size */
-    color: #fffbfb; /* Applies Arsenal red color to heading text */
+    color: #010000; /* Applies Arsenal red color to heading text */
 }
 
 p {
+    text-align: center; /* Centers paragraph text */
+    margin-bottom: 1.5rem; /* Adds spacing below paragraph */
+    color: #000000; /* Applies Arsenal red color to heading text */
+}
+
+.history2 {
     text-align: center; /* Centers paragraph text */
     margin-bottom: 1.5rem; /* Adds spacing below paragraph */
     color: #000000; /* Applies Arsenal red color to heading text */
@@ -215,7 +221,7 @@ p {
 /* Contact Section Styling      */
 /* ---------------------------- */
 #contact {
-    background-color: #FFF; /* White background for contrast */
+    background-color: #ffffff; /* White background for contrast */
     width: 90%; /* Contact section spans 90% of the container width */
     padding-left: 6rem; /* Large left padding */
     padding-top: 70px; /* Padding at the top */
@@ -247,6 +253,7 @@ p {
     padding: 1.5rem; /* Adds internal spacing */
     border-radius: 5px; /* Rounded corners */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    color: #060606;
 }
 
 .history-summary h2 {
@@ -264,6 +271,7 @@ p {
 .history-summary p {
     line-height: 1.6; /* Increases line spacing for better reading */
     margin: 0.75rem 0; /* Top and bottom margin for each paragraph */
+    color: #070707; /* Sets text color to black */
 }
 
 .history-background {
